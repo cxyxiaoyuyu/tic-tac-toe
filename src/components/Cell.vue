@@ -7,8 +7,10 @@
 <script>
 export default {
   props: ["text"],
+ 
   methods: {
     clickCell(){
+      console.log(this.$socket.emit)
       if(!this.text){
         this.$emit('click')
       }
